@@ -1,0 +1,141 @@
+{
+  "built_at": "2026-08-14 10:47:17",
+  "provenance": {
+    "model": "VVI-6",
+    "frozen_on": "2026-08-12",
+    "frozen_seed": 1,
+    "loglik": 3298.71,
+    "vdem": "v15",
+    "constellations": "v3.0",
+    "production_run": "2026-08-14 09:35:16"
+  },
+  "coverage": {
+    "n_rows": 3476,
+    "n_countries": 169,
+    "year_min": 2004,
+    "year_max": 2024,
+    "n_hybrid": 861,
+    "hybrid_type": "D.48_A.45_C.56",
+    "balanced": false,
+    "partial_series": [
+      {
+        "country_name": "Djibouti",
+        "year_min": 2018,
+        "year_max": 2024,
+        "n_years": 7
+      },
+      {
+        "country_name": "Equatorial Guinea",
+        "year_min": 2018,
+        "year_max": 2024,
+        "n_years": 7
+      },
+      {
+        "country_name": "Gabon",
+        "year_min": 2018,
+        "year_max": 2024,
+        "n_years": 7
+      },
+      {
+        "country_name": "Mauritania",
+        "year_min": 2006,
+        "year_max": 2024,
+        "n_years": 19
+      },
+      {
+        "country_name": "Republic of the Congo",
+        "year_min": 2006,
+        "year_max": 2024,
+        "n_years": 19
+      },
+      {
+        "country_name": "Solomon Islands",
+        "year_min": 2004,
+        "year_max": 2018,
+        "n_years": 15
+      },
+      {
+        "country_name": "South Sudan",
+        "year_min": 2011,
+        "year_max": 2024,
+        "n_years": 14
+      },
+      {
+        "country_name": "The Gambia",
+        "year_min": 2018,
+        "year_max": 2024,
+        "n_years": 7
+      }
+    ]
+  },
+  "constants": {
+    "level_breaks": [0.4, 0.55],
+    "binder_margin": 0.05,
+    "misfit_quantile": 0.99,
+    "misfit_cutoff": 9.11,
+    "borderline_threshold": 0.1,
+    "silhouette_overall": 0.287
+  },
+  "dictionary": [
+    {
+      "field": "type",
+      "display": "State and regime type",
+      "source": "label_1",
+      "definition": "One of six types. The label is the group's mean on the three measures: D.48_A.45_C.56 means mean liberal democracy 0.48, authority 0.45, capacity 0.56. The label carries no ranking and no normative content."
+    },
+    {
+      "field": "prob",
+      "display": "Confidence",
+      "source": "prob_1",
+      "definition": "How strongly the model places this country-year in its type. 1.00 is certain. The second- and third-best types are shown alongside."
+    },
+    {
+      "field": "borderline",
+      "display": "Near a boundary",
+      "source": "uncertainty",
+      "definition": "Classification certainty below 0.9. About 38% of all country-years qualify. The typology draws lines through a landscape that is genuinely continuous, so soft boundaries are expected, not a defect."
+    },
+    {
+      "field": "unusual",
+      "display": "Unusual for its type",
+      "source": "misfit_flag",
+      "definition": "The 35 country-years that sit furthest from the center of their own type. Distance is judged against how spread out that type is, so a country-year can be unusual for a tightly grouped type at a distance that would be ordinary in a loose one. Two things this is not. It is not a judgement about governance — many flagged cases are in the high-democracy type. And it is not the same as sitting near a boundary; those are different questions and the two lists barely overlap. Read it as a short queue of cases worth a second look."
+    },
+    {
+      "field": "direction",
+      "display": "Direction",
+      "source": "direction",
+      "definition": "Whether the country was in an episode of regime change that year: autocratizing, democratizing, stable, or mixed (overlapping episodes, 2 country-years). From V-Dem's Episodes of Regime Transformation."
+    },
+    {
+      "field": "level",
+      "display": "Level",
+      "source": "level",
+      "definition": "Position within the central type only: lower, mid, or upper third on liberal democracy. Cutpoints are fixed at 0.400 and 0.550 and do not move between annual releases. Blank for the other five types, where it has no meaning."
+    },
+    {
+      "field": "constraint",
+      "display": "Binding constraint",
+      "source": "constraint",
+      "definition": "A country's authority score is not an average of its three component indicators. It is whichever of the three scores lowest — battle deaths, homicides, or monopoly on the use of force. Because only the lowest one counts, the authority score alone does not tell you which of the three is holding it down. This field recovers that: armed conflict (battle deaths), criminal violence (homicides), or contested control (monopoly). How severe the constraint is, is the authority score itself."
+    },
+    {
+      "field": "coverage",
+      "display": "Coverage",
+      "source": "binder_provisional",
+      "definition": "Whether all three authority indicators were reported for that country-year. Complete means all three. Partial means at least one was not, so the constraint shown is the lowest of those that were, and may not be the true lowest. Aggregate views report the same field as '% missing an indicator'. Partial is uncommon in the lower types and near-universal in D.80_A.84_C.90, where the monopoly indicator does not cover consolidated democracies."
+    },
+    {
+      "field": "binder_clear",
+      "display": "Clear margin",
+      "source": "binder_clear",
+      "definition": "The binding indicator beats the runner-up by at least 0.05. Where it does not, two constraints are close to equally binding and the one shown should not be read as decisive."
+    },
+    {
+      "field": "outcome_provisional",
+      "display": "Episode unresolved",
+      "source": "outcome_provisional",
+      "definition": "The regime-change episode had not ended when the data series did, so its outcome is not yet known. The most recent year is always the least settled part of the product."
+    }
+  ]
+}

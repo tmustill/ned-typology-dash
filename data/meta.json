@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-08-31 13:01:54",
+  "built_at": "2026-09-03 18:30:48",
   "provenance": {
     "model": "VVI-6",
     "frozen_on": "2026-08-12",
@@ -7,46 +7,46 @@
     "loglik": 3298.71,
     "vdem": "v15",
     "constellations": "v3.0",
-    "production_run": "2026-08-14 09:35:16"
+    "production_run": "2026-09-03 17:57:29"
   },
   "coverage": {
-    "n_rows": 3476,
+    "n_rows": 3644,
     "n_countries": 169,
     "year_min": 2004,
-    "year_max": 2024,
-    "n_hybrid": 861,
+    "year_max": 2025,
+    "n_hybrid": 903,
     "hybrid_type": "D.48_A.45_C.56",
     "balanced": false,
     "partial_series": [
       {
         "country_name": "Djibouti",
         "year_min": 2018,
-        "year_max": 2024,
-        "n_years": 7
+        "year_max": 2025,
+        "n_years": 8
       },
       {
         "country_name": "Equatorial Guinea",
         "year_min": 2018,
-        "year_max": 2024,
-        "n_years": 7
+        "year_max": 2025,
+        "n_years": 8
       },
       {
         "country_name": "Gabon",
         "year_min": 2018,
-        "year_max": 2024,
-        "n_years": 7
+        "year_max": 2025,
+        "n_years": 8
       },
       {
         "country_name": "Mauritania",
         "year_min": 2006,
-        "year_max": 2024,
-        "n_years": 19
+        "year_max": 2025,
+        "n_years": 20
       },
       {
         "country_name": "Republic of the Congo",
         "year_min": 2006,
-        "year_max": 2024,
-        "n_years": 19
+        "year_max": 2025,
+        "n_years": 20
       },
       {
         "country_name": "Solomon Islands",
@@ -57,14 +57,14 @@
       {
         "country_name": "South Sudan",
         "year_min": 2011,
-        "year_max": 2024,
-        "n_years": 14
+        "year_max": 2025,
+        "n_years": 15
       },
       {
         "country_name": "The Gambia",
         "year_min": 2018,
-        "year_max": 2024,
-        "n_years": 7
+        "year_max": 2025,
+        "n_years": 8
       }
     ]
   },
@@ -72,9 +72,9 @@
     "level_breaks": [0.4, 0.55],
     "binder_margin": 0.05,
     "misfit_quantile": 0.99,
-    "misfit_cutoff": 9.11,
+    "misfit_cutoff": 9.16,
     "borderline_threshold": 0.1,
-    "silhouette_overall": 0.287
+    "silhouette_overall": 0.286
   },
   "dictionary": [
     {
@@ -99,7 +99,7 @@
       "field": "unusual",
       "display": "Unusual for its type",
       "source": "misfit_flag",
-      "definition": "The 35 country-years that sit furthest from the center of their own type. Distance is judged against how spread out that type is, so a country-year can be unusual for a tightly grouped type at a distance that would be ordinary in a loose one. Two things this is not. It is not a judgement about governance — many flagged cases are in the high-democracy type. And it is not the same as sitting near a boundary; those are different questions and the two lists barely overlap. Read it as a short queue of cases worth a second look."
+      "definition": "The 37 country-years that sit furthest from the center of their own type. Distance is judged against how spread out that type is, so a country-year can be unusual for a tightly grouped type at a distance that would be ordinary in a loose one. Two things this is not. It is not a judgement about governance — many flagged cases are in the high-democracy type. And it is not the same as sitting near a boundary; those are different questions and the two lists barely overlap. Read it as a short queue of cases worth a second look."
     },
     {
       "field": "direction",

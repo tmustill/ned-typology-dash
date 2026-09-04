@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-03 18:30:48",
+  "built_at": "2026-09-04 17:04:36",
   "provenance": {
     "model": "VVI-6",
     "frozen_on": "2026-08-12",
@@ -7,7 +7,7 @@
     "loglik": 3298.71,
     "vdem": "v15",
     "constellations": "v3.0",
-    "production_run": "2026-09-03 17:57:29"
+    "production_run": "2026-09-03 18:47:14"
   },
   "coverage": {
     "n_rows": 3644,
@@ -76,12 +76,44 @@
     "borderline_threshold": 0.1,
     "silhouette_overall": 0.286
   },
+  "crosswalk": [
+    {
+      "ned_label": "Strong Authoritarian",
+      "code": "D.09_A.73_C.56",
+      "ned_short": "Strong Auth."
+    },
+    {
+      "ned_label": "Dysfunctional",
+      "code": "D.11_A.17_C.16",
+      "ned_short": "Dysfunc."
+    },
+    {
+      "ned_label": "Weak Authoritarian",
+      "code": "D.29_A.56_C.28",
+      "ned_short": "Weak Auth."
+    },
+    {
+      "ned_label": "Less-Capable Hybrid",
+      "code": "D.48_A.45_C.56",
+      "ned_short": "Less-Cap. Hyb."
+    },
+    {
+      "ned_label": "Capable Hybrid",
+      "code": "D.55_A.74_C.79",
+      "ned_short": "Capable Hyb."
+    },
+    {
+      "ned_label": "Consolidated Democracy",
+      "code": "D.80_A.84_C.90",
+      "ned_short": "Consol. Dem."
+    }
+  ],
   "dictionary": [
     {
       "field": "type",
       "display": "State and regime type",
       "source": "label_1",
-      "definition": "One of six types. The label is the group's mean on the three measures: D.48_A.45_C.56 means mean liberal democracy 0.48, authority 0.45, capacity 0.56. The label carries no ranking and no normative content."
+      "definition": "One of six types, named by NED. Each name also has an analytic code recording the group's own mean on the three measures: D.48_A.45_C.56 means mean liberal democracy 0.48, authority 0.45, capacity 0.56. The code is what the model produces and what the six types are joined on; the name is what the type is called. The full pairing is on the Guide page. Neither carries a ranking."
     },
     {
       "field": "prob",
@@ -123,7 +155,7 @@
       "field": "coverage",
       "display": "Coverage",
       "source": "binder_provisional",
-      "definition": "Whether all three authority indicators were reported for that country-year. Complete means all three. Partial means at least one was not, so the constraint shown is the lowest of those that were, and may not be the true lowest. Aggregate views report the same field as '% missing an indicator'. Partial is uncommon in the lower types and near-universal in D.80_A.84_C.90, where the monopoly indicator does not cover consolidated democracies."
+      "definition": "Whether all three authority indicators were reported for that country-year. Complete means all three. Partial means at least one was not, so the constraint shown is the lowest of those that were, and may not be the true lowest. Aggregate views report the same field as '% missing an indicator'. Partial is uncommon in the lower types and near-universal in Consolidated Democracy, where the monopoly indicator does not cover consolidated democracies."
     },
     {
       "field": "binder_clear",

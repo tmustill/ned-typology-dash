@@ -1,6 +1,8 @@
 [
   {
     "type": "D.09_A.73_C.56",
+    "ned_label": "Strong Authoritarian",
+    "ned_short": "Strong Auth.",
     "n": 668,
     "n_countries": 50,
     "libdem_mean": 0.095,
@@ -16,6 +18,8 @@
   },
   {
     "type": "D.11_A.17_C.16",
+    "ned_label": "Dysfunctional",
+    "ned_short": "Dysfunc.",
     "n": 241,
     "n_countries": 26,
     "libdem_mean": 0.113,
@@ -31,6 +35,8 @@
   },
   {
     "type": "D.29_A.56_C.28",
+    "ned_label": "Weak Authoritarian",
+    "ned_short": "Weak Auth.",
     "n": 718,
     "n_countries": 58,
     "libdem_mean": 0.286,
@@ -46,6 +52,8 @@
   },
   {
     "type": "D.48_A.45_C.56",
+    "ned_label": "Less-Capable Hybrid",
+    "ned_short": "Less-Cap. Hyb.",
     "n": 903,
     "n_countries": 68,
     "libdem_mean": 0.474,
@@ -61,6 +69,8 @@
   },
   {
     "type": "D.55_A.74_C.79",
+    "ned_label": "Capable Hybrid",
+    "ned_short": "Capable Hyb.",
     "n": 519,
     "n_countries": 40,
     "libdem_mean": 0.548,
@@ -76,6 +86,8 @@
   },
   {
     "type": "D.80_A.84_C.90",
+    "ned_label": "Consolidated Democracy",
+    "ned_short": "Consol. Dem.",
     "n": 595,
     "n_countries": 33,
     "libdem_mean": 0.802,
